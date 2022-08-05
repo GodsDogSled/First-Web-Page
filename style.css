@@ -15,7 +15,7 @@ body{
     width:100%;
     height:100%;
     
-    border: solid 3px yellow;
+    border: 0;
 }
 
 /*------------------------------HEADER----------------------------*/
@@ -24,11 +24,21 @@ body{
     justify-content: space-between;
     align-items: center;
     padding:16px;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 ul{
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
     list-style:none;
     display: flex;
+    gap:10px;
 
 }
 
@@ -36,7 +46,9 @@ ul{
 .footer{
     display: flex;
     justify-content: center;
-    padding:16px;
+    align-items: center;
+    
+    width:100%;
 }
 
 /*////////////////////////////////////////////////////////////  C O N T E N T   //////////////////////////////////////////////////////////////////////////////*/
@@ -46,7 +58,7 @@ ul{
     flex-direction: column;
     justify-content: space-between;
     flex:3;
-    align-content: stretch;
+    align-content: center;
     
     
 }
@@ -61,6 +73,7 @@ ul{
     justify-content: center;
     padding:90px;
     gap:16px;
+    font-family: Helvetica, sans-serif;
 }
 
 .info-content{
@@ -85,6 +98,7 @@ p{
 
 .info img{
     max-width:500px;
+    border-radius: 12px;
 }
 
 button {
@@ -106,20 +120,38 @@ button {
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding:90px;
+    padding-top: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 36px;
+
 }
 
 .boxes{
     display:flex;
-    max-width: 500px;
+    
+    
+    max-width: 600px;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 12px;
+    gap:12px;
+}
 
+.boxes div{
+    max-width: 106;
 }
 
 .boxes img{
     
     width:100px;
     height:100px;
-    border: solid 3px blueviolet;
-    border-radius: 8px;
+    border: solid 3px #1f2937;
+    border-radius: 10px;
 
 }
 
@@ -128,10 +160,57 @@ button {
 
 
 /*------------------------------QUOTE----------------------------*/
-
 .quote{
-    display:flex;
+    display: flex;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding:90px;
+}
+ .quote p{
+    color:black;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width:800px;
+    border:0;
+    
+
+
 }
 
 /*------------------------------SIGN_UP----------------------------*/
 
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:90px;
+    font-family: Helvetica, sans-serif;
+}
+
+.sign-up-item{
+    display: flex;
+    padding:50px;
+    width:900px;
+    border-radius: 8px;
+    background-color: #3882f6;
+    justify-content: space-around;
+}
+
+.sign-up-text{
+    display:flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: #f9faf8;
+}
+
+.sign-up-text p{
+    font-size: 12px;
+    margin:0;
+}
+
+.sign-up-item button{
+    border: solid white;
+    width:15%;
+    font-weight: bold;
+}
